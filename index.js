@@ -17,7 +17,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // ✅ Step 3: Handle preflight requests
-app.options('*', cors(corsOptions));
+
+app.options('*', cors());
+
 
 // ✅ Step 4: Other Middlewares
 app.use(express.json()); // Body parser for JSON
