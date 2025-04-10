@@ -8,10 +8,10 @@ const PORT = process.env.PORT; // Removed fallback 5000
 
 // Middlewares
 app.use(cors({
-  origin: 'https://job-tracker-frontend-qhfdpgbqg-rahulsinghklrs-projects.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true,
-}));
+    origin: 'https://job-tracker-frontend-g55lu3xfr-rahulsinghklrs-projects.vercel.app',
+    credentials: true
+  }));
+  
 app.use(express.json());
 
 // Routes
